@@ -3,7 +3,7 @@ Parlagfű detektálása Sentinel–2 műholdfelvételek, vegetációs indexek é
 
 # Parlagfű detektálása Sentinel–2 idősorok és gépi tanulás alapján
 
-Ez a repository a diplomamunkámhoz kapcsolódó Python-alapú feldolgozási munkafolyamatot tartalmazza, amely az ürömlevelű parlagfű (*Ambrosia artemisiifolia L.*) Sentinel–2 műholdfelvételek alapján történő detektálását vizsgálja.
+Ez a repository a diplomamunkámhoz kapcsolódó Python-alapú feldolgozási munkafolyamatot tartalmazza, amely az ürömlevelű parlagfű (*Ambrosia artemisiifolia L.*) Sentinel–2 műholdfelvételek alapján történő detektálhatóságát vizsgálja.
 
 A módszertan Sentinel–2 L2A műholdképekre, vegetációs indexekre, fenológiai idősorokra és Random Forest osztályozási modellre épül.
 
