@@ -53,6 +53,5 @@ A kódok Python nyelven készültek. A fontosabb használt csomagok:
 - numpy
 - pandas
 - scikit-learn
-- imbalanced-learn
 - matplotlib
 - joblib
