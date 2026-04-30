@@ -1,0 +1,2 @@
+﻿version;params;precision_0;recall_0;f1_0;precision_1;recall_1;f1_1;accuracy;TN;FP;FN;TP;FPR;FNR;specificity;NPV;features_count
+parlagfu_detekalas_2025;{'max_depth': 20, 'n_estimators': 300};0.9554;0.969;0.9622;0.6507;0.5608;0.6024;0.9309;4566;146;213;272;0.031;0.4392;0.969;0.9554;28
