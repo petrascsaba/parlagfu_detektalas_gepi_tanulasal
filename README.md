@@ -16,3 +16,43 @@ A feldolgozás során több időpontból származó Sentinel–2 felvételek ala
 ## Főbb feldolgozási lépések
 
 A repositoryban szereplő notebookok és scriptek az alábbi főbb lépéseket dokumentálják:
+1. Sentinel–2 L2A képek lekérdezése és letöltése a Copernicus Data Space Ecosystem API-n keresztül.
+2. T33TYM és T33TYN MGRS csempék mozaikolása.
+3. Fejér vármegyei mintaterület kivágása.
+4. A sávok 10 méteres rácsra illesztése.
+5. SCL-alapú felhőmaszkolás és 10 napos medián kompozitok készítése.
+6. Jellemzők előállítása a tanítóadatokhoz
+7. Random Forest modell tanítása és kiértékelése.
+8. Klasszifikált parlagfű-raszter előállítása.
+
+## Használt adatok
+A feldolgozás főbb bemeneti adatai:
+- Sentinel–2 L2A műholdfelvételek
+- Sentinel–2 Scene Classification Layer / SCL felhőmaszkoláshoz
+- Fejér vármegye határa
+- parlagfűvel fertőzött területeket tartalmazó tanítópoligonok
+- CLCplus backbone felszínborítási adatok a nem releváns területek maszkolásához
+A nagy méretű műholdképek és térbeli bemeneti adatok nem minden esetben részei a repositorynak.
+
+## Használt módszerek
+A feldolgozás során több vegetációs index került kiszámításra, többek között:
+- NDVI
+- GNDVI
+- EVI
+- MSAVI2
+- NDRE
+- CIRE
+- PSRI
+- NDWI
+A modellalkotás Random Forest osztályozóval történt. A tanítás során a spektrális idősorok, vegetációs indexek és ezekből képzett statisztikai jellemzők szolgáltak bemeneti változóként.
+
+## Technológiai környezet
+A kódok Python nyelven készültek. A fontosabb használt csomagok:
+- rasterio
+- geopandas
+- numpy
+- pandas
+- scikit-learn
+- imbalanced-learn
+- matplotlib
+- joblib
